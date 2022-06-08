@@ -7,7 +7,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
-
+	<style>
+		@keyframes bomb {
+		  from { font-size : 500%;}
+		  to { font-size : 100%;}
+		}
+		h1 {
+			animation-name : bomb;
+			animation-duration : 30s;
+			animation-iteration-count : infinite;
+		}
+		</style>
 	<style>
 		body {
 			text-align: center;
@@ -65,7 +75,7 @@
 	</style>
 <script>
 	function show() {
-	    document.getElementById("fig").src="img/학교.png";
+	    document.getElementById("fig").src="학교.png";
 	}
 	function hide(){
  	    document.getElementById("fig").src="";
