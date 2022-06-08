@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <title>우리학교 봄꽃식물 세부 정보</title>
+    <meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+
+    <style>
+        body {width: 1200px;}
+        .he {
+            width: 1200px;
+            height: 50px;
+            border: 2px solid red; }
+    .bon1,
+    .bon2,
+    .bon3 { width: 4000px;
+            height: 400px;
+            border: 2px solid green;
+            float: right;
+            box-sizing: border-box; }
+    .foo{
+             width: 1200px;
+            height: 50px;
+            border: 2px solid red;
+            clear: both;
+    }
+    </style>
+    <script>
+        function drawImage()
+        {
+            var found = null;
+            var sel = document.getElementsByName("plant"); 
+            var img = document.getElementById("plantimage"); 
+         
+            for(var i=0; i<sel.length; i++) 
+            {
+                if(sel[i].checked == true) 
+                {
+                    found = sel[i];
+                    break; 
+                }
+            }
+            img.src = found.value;
+        }
+        </script>
+</head>
+       
+        <body onload="drawImage()">  
+            <h3> 1. 우리학교 봄꽃식물 중 정자 옆 화단에서 관찰되는 식물입니다. 더 자세히 알아보고 싶은 식물을 하나 선택해 주세요! 그림이 나오고 잠시 후 상세페이지가 열려요!</h3><hr> 
+            <form> 
+                <input type="radio" name="plant" value="img/데이지.jpg" onchange="drawImage()">데이지
+                <input type="radio" name="plant" value="img/마가렛.jpg" onchange="drawImage()">마가렛
+                <input type="radio" name="plant" value="img/펜지.jpg" onchange="drawImage()">펜지
+                <input type="radio" name="plant" value="img/금잔화.jpg" onchange="drawImage()">금잔화
+                <input type="radio" name="plant" value="img/쇠별꽃.jpg" onchange="drawImage()">쇠별꽃
+                <input type="radio" name="plant" value="img/민들레.jpg" onchange="drawImage()">민들레
+                <br><img id="plantimage" src="img/정자.png">
+
+            </select>
+            </form>
+        
+         <body onload="drawImage()">  
+                <h3> 2. 우리학교 봄꽃식물 중 뒷동산에서 관찰되는 식물입니다. 더 자세히 알아보고 싶은 식물을 하나 선택해 주세요! 그림이 나오고 잠시 후 상세페이지가 열려요!</h3><hr> 
+             
+                <input type="radio" name="plant" value="img/냉이.jpg" onchange="drawImage()">냉이
+                <input type="radio" name="plant" value="img/영산홍.jpg" onchange="drawImage()">영산홍
+                <input type="radio" name="plant" value="img/이팝나무.jpg" onchange="drawImage()">이팝나무
+                <input type="radio" name="plant" value="img/조팝나무.jpg" onchange="drawImage()">조팝나무
+                <input type="radio" name="plant" value="img/산수유.jpg" onchange="drawImage()">산수유
+                <input type="radio" name="plant" value="img/금잔화.jpg" onchange="drawImage()">금잔화
+                <br><img id="plantimage" src="img/뒷동산.png">   
+             </select>
+            </form>
+        </body>
+
+        <body onload="drawImage()"> 
+            
+
+        </body>
+        </html>
+       
