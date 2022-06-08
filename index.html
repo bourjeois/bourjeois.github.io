@@ -1,8 +1,119 @@
+<!DOCTYPE html>
+
 <html>
-  <body>
-    
-    
-  test  
-    
-  </body>
+<head>
+	<title>우리학교 사계절 식물도감</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+
+	<style>
+		body {
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Hanna', sans-serif;
+			font-weight: 100;
+			color: white;
+			background-image: url('학교사진.png');
+			background-repeat: no-repeat;
+			background-size: grid;
+		}
+
+		.project1 {
+			width: 500px;
+			padding: 20px;
+			background-color: #218C5A; 
+			margin-bottom: 30px;
+			margin-top: 30px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 30px;
+
+		}
+		.project2 {
+			width: 500px;
+			padding: 20px;
+			background-color: #CE1D1D;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 30px;
+
+		}
+
+	    button {
+	    	background-color: #D3A542;
+	    	width: 10rem;
+	    	height: 2.5rem;
+	    	border-radius: 10px;
+	    	border: none;
+	    	background : 1; }
+
+	    a {
+	    	font-size: 20px;
+	    	text-decoration: none;
+	    	font-family: 'Hanna', sans-serif;
+	    	color : #C82F2F;
+	    }
+
+	    a:hover {
+	    	color: green;
+	    }
+
+	</style>
+<script>
+	function show() {
+	    document.getElementById("fig").src="학교.png";
+	}
+	function hide(){
+ 	    document.getElementById("fig").src="";
+	}
+</script>
+</head>
+<body>
+	<h1 style="color: #5c4bf8">우리학교 사계절 식물도감 </h1>
+	<h1 onmouseover="show()" onmouseout="hide()">우리학교 사계절 식물도감 </h1>
+     <div><img id="fig" src=""></div>
+	<div class= "project1">
+		<h2>1. 봄꽃식물</h2>
+		<img src="img/봄.png" width="500">
+		<div class="pp1">
+			<p>새롭게 피어나는 새싹들!</p>
+			<button><a href="photo-detail.html">살펴보기</a>
+			</button>
+	    </div>
+    </div>
+
+    <div class= "project2">
+		<h2>2. 여름꽃식물</h2>
+		<img src="img/여름.png" width="500">
+		<div class="pp1">
+			<p>뜨거운 햇살 아래 피어나는 꽃!</p>
+			<button><a href="photo-detail.html">살펴보기</a>
+				</button>
+		</div>
+    </div>
+
+    <div class= "project1">
+		<h2>3. 가을꽃식물</h2>
+		<img src="img/가을.png" width="500">
+		<div class="pp1">
+			<p>가을에 풍성하게 영글어가는 과일!</p>
+			<button><a href="photo-detail.html">살펴보기</a>
+				</button>
+		</div>
+    </div>
+
+	<div class= "project2">
+		<h2>4. 학교 주변 겨울풍경</h2>
+		<img src="img/겨울.png" width="500">
+		<div class="pp1">
+			<p>우리 학교 주변 겨울 풍경을 살펴보러 가요!</p>
+			<button><a href="photo-detail.html">살펴보기</a>
+				</button>
+		</div>
+    </div>
+</body>
 </html>
